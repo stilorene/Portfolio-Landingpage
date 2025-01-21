@@ -3,15 +3,37 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop:inherit;
+}
+
+section {
+    height: auto;
+    scroll-snap-align: start;
+}
+
+nav ul {
+    list-style-type: none; /* Entfernt die Standard-Punkte der Liste */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Elemente nebeneinander ausrichten */
+    gap: 20px; /* Abstand zwischen den Links */
 }
 
 .section-1 {
-    height: 100vh;  /* Höhe auf die gesamte Ansicht setzen */
-    display: flex;  /* Flexbox aktivieren */
-    justify-content: center;  /* Horizontal zentrieren */
-    align-items: center;  /* Vertikal zentrieren */
-    text-align: center;  /* Text innerhalb des Containers zentrieren */
-    background-color: black;  /* Hintergrundfarbe */
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* Zwei gleich breite Spalten */
+    justify-items: center;  /* Elemente horizontal zentrieren */
+    align-items: center;  /* Elemente vertikal zentrieren */
+    background-color: black;
+    
+}
+
+.toronto_hafen {
+    width: 90%;
+    height: 90%;
+
 }
 
 
@@ -25,14 +47,21 @@ body, html {
     content: '|';
     right: -10;
     animation: blink 1s infinite step-end;
+    
 }
  
 
 @keyframes blink {
-    50% {opacity: 0;}
-
-    100% {opacity: 1;}
+    50% {
+        opacity: 0
+    }
+   
+    100% {
+        opacity: 1
+    }
 }
+
+
 
 .underline {
     font-size: 40px;
@@ -48,5 +77,25 @@ body, html {
     height: 100vh; /* Nimmt die volle Höhe des Viewports */
     background-color: rosybrown;
     background-size: cover;
+    scroll-snap-align: end;
+    
 }
-
+.section-3 {
+    width: 100%;
+    height: 100vh; /* Nimmt die volle Höhe des Viewports */
+    background-color: beige;
+    background-size: cover;
+}
+.section-4 {
+    width: 100%;
+    height: 100vh; /* Nimmt die volle Höhe des Viewports */
+    background-color: green;
+    background-size: cover;
+}
+.section-5 {
+    width: 100%;
+    height: 100vh; /* Nimmt die volle Höhe des Viewports */
+    background-color: skyblue;
+    background-size: cover;
+    
+}
