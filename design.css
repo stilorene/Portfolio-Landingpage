@@ -5,36 +5,44 @@ body, html {
     height: 100%;
     scroll-snap-type: y mandatory;
     scroll-snap-stop:inherit;
-    font-family: Neco;
+    font-family: 'Kode Mono', serif;
+    
+
+    word-spacing: -5px; /* Verkleinert den Abstand zwischen Wörtern */
+
 }
 
+  
 :root {
     /* Farbpalette */
-    --primary-color: #FFFAEC; 
-    --secondary-color: #F5ECD5;
-    --accent-color: #578E7E; 
-    --background-color: #3D3D3D; 
+    --primary-color: #727D73; 
+    --secondary-color: #AAB99A;
+    --accent-color: #D0DDD0; 
+    --background-color: #F0F0D7; 
     
 }
 
 q {
     font-size: 30px;
     width: 1px;
+    color: var(--secondary-color);
 }
+
+
 .section-1 {
     display: flex; 
     justify-content: center; 
     align-items: center; 
     text-align: center;
     height: 100vh; 
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     
 }
 
 .intro {
     text-justify: center;
     font-size: 50px;
-    font-weight: 200;
-    color: var(--accent-color);
+    font-weight: 700;
+    color: var(--primary-color);
 
 }
