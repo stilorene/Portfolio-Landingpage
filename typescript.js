@@ -22,8 +22,8 @@ function typeWriter(elementId, text, speed) {
 
 
 async function startTyping() {
-    await typeWriter('typewriter', 'Rene Marchner', 100);
-    await typeWriter('underline', 'Informatikstudent', 100);
+    await typeWriter('intro', 'Ich bin Rene Marchner', 50);
+    
 }
 
 startTyping();

@@ -5,97 +5,36 @@ body, html {
     height: 100%;
     scroll-snap-type: y mandatory;
     scroll-snap-stop:inherit;
+    font-family: Neco;
 }
 
-section {
-    height: auto;
-    scroll-snap-align: start;
+:root {
+    /* Farbpalette */
+    --primary-color: #FFFAEC; 
+    --secondary-color: #F5ECD5;
+    --accent-color: #578E7E; 
+    --background-color: #3D3D3D; 
+    
 }
 
-nav ul {
-    list-style-type: none; /* Entfernt die Standard-Punkte der Liste */
-    padding: 0;
-    margin: 0;
-    display: flex; /* Elemente nebeneinander ausrichten */
-    gap: 20px; /* Abstand zwischen den Links */
+q {
+    font-size: 30px;
+    width: 1px;
 }
-
 .section-1 {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;  /* Zwei gleich breite Spalten */
-    justify-items: center;  /* Elemente horizontal zentrieren */
-    align-items: center;  /* Elemente vertikal zentrieren */
-    background-color: black;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    height: 100vh; 
+    background-color: var(--primary-color);
     
 }
 
-.toronto_hafen {
-    width: 90%;
-    height: 90%;
+.intro {
+    text-justify: center;
+    font-size: 50px;
+    font-weight: 200;
+    color: var(--accent-color);
 
-}
-
-
-.typewriter {
-   font-size: 80px;
-   color:#40FF40;
-   font-family: 'Courier New', Courier, monospace;
-}
-
-.typewriter::after {
-    content: '|';
-    right: -10;
-    animation: blink 1s infinite step-end;
-    
-}
- 
-
-@keyframes blink {
-    50% {
-        opacity: 0
-    }
-   
-    100% {
-        opacity: 1
-    }
-}
-
-
-
-.underline {
-    font-size: 40px;
-    color:#40FF40;
-}
-.underline::after {
-    content: '|';
-    right: -10;
-    animation: blink 1s infinite step-end;
-}
-.section-2 {
-    width: 100%;
-    height: 100vh; /* Nimmt die volle Höhe des Viewports */
-    background-color: rosybrown;
-    background-size: cover;
-    scroll-snap-align: end;
-    
-}
-.section-3 {
-    width: 100%;
-    height: 100vh; /* Nimmt die volle Höhe des Viewports */
-    background-color: beige;
-    background-size: cover;
-}
-.section-4 {
-    width: 100%;
-    height: 100vh; /* Nimmt die volle Höhe des Viewports */
-    background-color: green;
-    background-size: cover;
-}
-.section-5 {
-    width: 100%;
-    height: 100vh; /* Nimmt die volle Höhe des Viewports */
-    background-color: skyblue;
-    background-size: cover;
-    
 }
